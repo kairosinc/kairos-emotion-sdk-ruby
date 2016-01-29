@@ -39,10 +39,15 @@ Use the following steps to build a gem and use locally
         ```
         gem 'kairos_emotion_api', '~> 1.0'
         ```
+        or, refer to kairos_emotion_api in local dir: 
+        './lib/kairos_emotion_api.rb'
 
     4. Now create an instance and use the instance methods, like following.
 
         ```
-        ctl = KairosEmotionApi::EmotionAnalysisController.new params
-        ctl.post_media params
+        require './lib/kairos_emotion_api.rb'
+
+        ctl = KairosEmotionApi::EmotionAnalysisController.new
+        ctl.create_media('http://media.kairos.com/test.flv')
+
         ```

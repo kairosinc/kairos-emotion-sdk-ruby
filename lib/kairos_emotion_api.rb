@@ -4,12 +4,12 @@ require 'json'
 require 'unirest'
 
 # APIMATIC Helper Files
-require 'kairos_emotion_api/api_helper.rb'
-require 'kairos_emotion_api/api_exception.rb'
-require 'kairos_emotion_api/configuration.rb'
-require 'kairos_emotion_api/custom_auth_utility.rb'
+require './lib/kairos_emotion_api/api_helper.rb'
+require './lib/kairos_emotion_api/api_exception.rb'
+require './lib/kairos_emotion_api/configuration.rb'
+require './lib/kairos_emotion_api/custom_auth_utility.rb'
 
 # Controllers
-require 'kairos_emotion_api/controllers/emotion_analysis_controller.rb'
+require './lib/kairos_emotion_api/controllers/emotion_analysis_controller.rb'
 
 # Models

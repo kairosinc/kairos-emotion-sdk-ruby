@@ -12,8 +12,11 @@ module KairosEmotionApi
       #     Configuration.app_id
       #     Configuration.app_key
       # 
-      # ie. Add a header through:
-      #     headers["key"] = "value"
+        headers["Content-Type"] = Configuration.content_type
+        headers["app_id"]       = Configuration.app_id
+        headers["app_key"]      = Configuration.app_key
+
+        return headers
 
     end
     

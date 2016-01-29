@@ -7,13 +7,13 @@ module KairosEmotionApi
     @BASE_URI = "https://api.kairos.com"
 
     # Content Type
-    @content_type = ""application/json""
+    @content_type = "application/json"
 
     # Application ID
-    @app_id = "TODO: Replace"
+    @app_id = ""
 
     # Application Key
-    @app_key = "TODO: Replace"
+    @app_key = ""
 
 
     # create the getters and setters

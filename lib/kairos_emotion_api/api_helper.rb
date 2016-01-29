@@ -72,7 +72,7 @@ module KairosEmotionApi
       protocol = matches[1]
 
       # remove redundant forward slashes
-      query = url[protocol.length..-1].gsub(/\/\/+/, '/')
+      query = url[protocol.length..-1]
 
       # return process url
       return protocol + query;
