@@ -15,6 +15,9 @@ module KairosEmotionApi
     # Application Key
     @app_key = ""
 
+    # set timeout in seconds for API processes
+    @api_timeout = 10
+
 
     # create the getters and setters
     class << self
@@ -25,6 +28,8 @@ module KairosEmotionApi
       attr_accessor :app_id
 
       attr_accessor :app_key
+
+      attr_accessor :api_timeout
 
     end
   end

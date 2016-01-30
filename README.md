@@ -51,3 +51,4 @@ Use the following steps to build a gem and use locally
         ctl.create_media('http://media.kairos.com/test.flv')
 
         ```
+        cd into the directory and run ruby EmotionAnalysisTest.rb

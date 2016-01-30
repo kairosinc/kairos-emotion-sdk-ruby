@@ -16,6 +16,7 @@ module KairosEmotionApi
       # process optional query parameters
       query_builder = APIHelper.append_url_with_query_parameters query_builder, {
         "source" => source,
+        'timeout' => Configuration.api_timeout
       }
 
       # validate and preprocess url
@@ -24,8 +25,7 @@ module KairosEmotionApi
       # prepare headers
       headers = {
         "user-agent" => "APIMATIC 2.0",
-        "accept" => "application/json",
-        "Content-Type" => Configuration.content_type
+        "accept" => "application/json"
       }
 
       # append custom auth authorization
@@ -38,8 +38,7 @@ module KairosEmotionApi
       if !(response.code.between?(200,206)) # [200,206] = HTTP OK
         raise APIException.new "HTTP Response Not OK", response.code, response.raw_body
       elsif
-        get_media_by_id(response.body["id"])
-        
+        puts response.body["frames"]
       end
 
     end
